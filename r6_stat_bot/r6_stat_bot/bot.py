@@ -1,6 +1,9 @@
 import discord
 from discord.ext import commands
 import sys, traceback
+import os
+
+token = os.environ.get('DISCORD_TOKEN')
 
 prefix = '!'
 
@@ -23,4 +26,4 @@ async def on_ready():
     game = discord.Game("Rainbow Six Siege")
     await bot.change_presence(status=discord.Status.online, activity=game)
 
-bot.run(process.env.DISCORD_TOKEN, bot=True, reconnect=True) 
+bot.run(token, bot=True, reconnect=True) 
