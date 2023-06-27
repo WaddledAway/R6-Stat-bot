@@ -3,7 +3,7 @@ from discord.ext import commands
 import sys, traceback
 import os
 
-token = os.environ.get('DISCORD_TOKEN')
+token = Njk3MTUwODYzNzk3Mzg3MzA0.GhZrUp.2Eu3uqdZKx1sJTTqHeU5qVKiw1m5DHMFjtAZRg
 
 prefix = '!'
 
